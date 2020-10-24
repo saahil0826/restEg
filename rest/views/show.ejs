@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>More info</title>
+  </head>
+  <body>
+    <h1>Comment id: <%=comment.id %></h1>
+    <h2><%=comment.comment %>- <%=comment.username %></h2>
+    <form class="" action="/comments/<%=comment.id%>?_method=delete" method="post">
+      <button><a href="/comments/<%=comment.id %>/edit">edit</a>
+</button>
+  <button type="submit" name="button">Delete</button>
+  </form>
+  </body>
+</html>

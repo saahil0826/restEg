@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Edit</title>
+  </head>
+  <body>
+  <h1>Edit</h1>
+  <form class="" action="/comments/<%=comment.id%>?_method=PATCH" method="post">
+    <textarea name="comment" rows="5" cols="30" id="comment"><%=comment.comment%></textarea>
+    <button type="submit" name="button">Save</button>
+  </form>
+  <a href="/comments">Back to index</a>
+  </body>
+</html>

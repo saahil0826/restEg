@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Comments</title>
+  </head>
+  <body>
+    <ul>
+      <% comments.forEach(function(c){ %>
+      <li><b><%=c.username %></b>- <%=c.comment %> </li>
+      <a href="/comments/<%=c.id %>">more info</a>
+      <a href="/comments/<%=c.id %>/edit">edit</a>
+      <% }) %>
+    </ul>
+    <a href="/comments/new">Add a new comment</a>
+  </body>
+</html>

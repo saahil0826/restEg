@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>details page</title>
+  </head>
+  <body>
+    <h1><%=product.name %>
+</h1>
+    <ul>
+          <li>Price - $<%=product.price %></li>
+          <li>Category - <%=product.category %></li>
+    </ul>
+    <a href="/products/<%=product.id %>/edit">edit</a>
+    <a href="/products">Go home</a>
+
+    <form class="" action="/products/<%=product._id %>?_method=delete" method="post">
+      <button type="submit" name="button">Delete</button>
+    </form>
+  </body>
+</html>
