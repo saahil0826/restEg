@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({extended:true})); // has to be npm install body-p
 
 
 mongoose
-  .connect("mongodb+srv://user:eom6ZJfb3GOEunDp@blogapp.kpkoj.mongodb.net/blog?retryWrites=true&w=majority", {
+  .connect("mongodb://localhost:27017/movieApp", {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
